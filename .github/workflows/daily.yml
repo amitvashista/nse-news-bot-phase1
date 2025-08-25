@@ -31,7 +31,7 @@ jobs:
         env:
           TZ: Asia/Kolkata
         run: |
-          python src/data_fetch.py --date today
+          python -m src.data_fetch --date today  
 
       - name: Upload artifacts (raw JSON)
         uses: actions/upload-artifact@v4
